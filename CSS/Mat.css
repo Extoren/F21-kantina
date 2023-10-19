@@ -1,0 +1,174 @@
+.mat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.mat-box {
+    width: 85%;
+    height: 30%;
+    background-color: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.mat-box .Box {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%; 
+    width: 100%; 
+    margin: 10px;
+    text-align: left;
+}
+
+.mat-box .Box img {
+    padding: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px rgba(242, 101, 37, 0.75);
+    transition: all 0.3s ease;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+}
+
+.mat-box .Box p {
+    margin: 10px;
+    font-size: 14pt;
+    font-weight: 800;
+    color: black;
+    align-self: flex-start;
+}
+
+.mat-box .Box h1 {
+    margin: 10px;
+    font-size: 12pt;
+    font-weight: 600;
+    color: #F26525;
+    align-self: flex-start;
+}
+
+.mat-box .Box h2 {
+    margin: 10px;
+    font-size: 11pt;
+    font-weight: 500;
+    color: black;
+    align-self: flex-start;
+    text-align: center;
+}
+
+@media (max-width:1200px) {
+    .mat-container {
+        height: 100%;
+    }
+    .mat-box {
+        flex-direction: column;
+        width: 50%;
+        height: 80%;
+        margin: 0;
+    }
+    .mat-box .Box {
+        padding-top: 0px;
+    }
+    .mat-box .Box img {
+        width: 200px;
+        height: 200px;
+    }
+    .mat-box .Box h2 {
+        align-self: flex-start;
+        text-align: none;
+    }
+}
+
+@media (max-height:770px) {
+    .mat-container {
+        height: 100%;
+    }
+    .mat-box {
+        flex-direction: column;
+        width: 50%;
+        height: 80%;
+        margin: 0;
+    }
+    .mat-box .Box {
+        padding-top: 0px;
+    }
+    .mat-box .Box img {
+        width: 200px;
+        height: 200px;
+    }
+    .mat-box .Box h2 {
+        align-self: flex-start;
+        text-align: none;
+    }
+}
+
+.mat-text-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.mat-text-header hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, black, transparent);
+    margin-top: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mat-text-header p {
+    font-weight: normal;
+    margin-top: -20px;
+}
+
+@media (max-height: 830px) {
+    .mat-text-header {
+        font-size: 15px;
+        margin-top: 100px;
+    }
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.slide-in-right {
+    animation: slide-in-right 1s ease-out;
+}
+  
+.slide-in-left {
+    animation: slide-in-left 1s ease-out;
+}
+  
+@keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+  
+@keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}

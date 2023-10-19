@@ -1,0 +1,111 @@
+.kokker-container {
+    background-image: url("https://apendag.f21.no/wp-content/uploads/2020/12/Kantine1-scaled.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.kok-Box {
+    margin-right: 100px;
+    align-self: center;
+    color: white;
+    font-size: 20pt;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid #F26525;
+}
+
+.kok-Box img {
+    padding: 0;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(242, 101, 37, 0.75);
+    transition: all 0.3s ease;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+}
+
+.kok-Box:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 1150px) {
+    .kokker-container {
+        height: 100%;
+    }
+    .kok-Box {
+        margin-top: 300px;
+        transform: translate(20%, -0%);
+    }
+    #correct {
+        transform: translate(0%, -0%);
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kok-Box {
+        margin-top: 150px;
+        margin-right: 150px;
+        transform: translate(30%, -0%);
+    }
+    .kokker-container {
+        height: 100%;
+    }
+    #correct {
+        transform: translate(0%, -0%);
+    }
+}
+
+.kokker-text-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kokker-text-header hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    margin-top: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kokker-text-header p {
+    font-weight: normal;
+    margin-top: -20px;
+}
+
+@media (max-width:1500px) {
+    .kokker-text-header {
+        margin-top: 100px;
+    }
+    .kok-Box img {
+        padding: 0;
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media (max-width:1150px) {
+    .kokker-text-header {
+        margin-top: 0px;
+    }
+}
